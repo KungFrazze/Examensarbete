@@ -126,12 +126,6 @@ Sydamerika
 
 <p><b>Note:</b> When a user clicks on a radio-button, it becomes checked, and all other radio-buttons with equal name become unchecked.</p>
 </fieldset>
-
-
-
-
-  
-  
   
     <br /><br />
 
@@ -164,8 +158,6 @@ if (isset($_GET['todo']))
       $str = mb_convert_encoding($row['beskriv'], 'Windows-1252', 'UTF-8');
       echo $str;
           echo "</center></fieldset><br />";
-    
-       
   }
   
   mysql_close($conn);
@@ -194,52 +186,52 @@ echo guid();
 
 //array("readRole" => "all" , "metaReadRole" => "all" ,) . 
 
-	$requestBody = array(array("eventId" => guid(), "eventType" => "Examensarbete", "data" =>
-	'Request method: ' . $_SERVER['REQUEST_METHOD'] . 
-	"\n" . 'Request time: ' . $_SERVER['REQUEST_TIME'] . 
-	"\n" . 'Request time, type-float: ' . $_SERVER['REQUEST_TIME_FLOAT'] . 
-	"\n" . 'What revision of the CGI specification the server is using: ' . $_SERVER['GATEWAY_INTERFACE'] . 
-	"\n" . 'Server adress: ' . $_SERVER['SERVER_ADDR'] . 
-	"\n" . 'Server name: ' . $_SERVER['SERVER_NAME'] . 
-	"\n" . 'Server software: ' . $_SERVER['SERVER_SOFTWARE'] . 
-	"\n" . 'Server protocol: ' . $_SERVER['SERVER_PROTOCOL'] . 
-	"\n" . 'The query string, if any, via which the page was accessed: ' . $_SERVER['QUERY_STRING'] . 
-	"\n" . 'The document root directory under which the current script is executing: ' . $_SERVER['DOCUMENT_ROOT'] . 
-	"\n" . 'Contents of the Accept: ' . $_SERVER['HTTP_ACCEPT'] . 
-	"\n" . 'Contents of the Accept Charset: ' . $_SERVER['HTTP_ACCEPT_CHARSET'] . 
-	"\n" . 'Contents of the Accept-Language: ' . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . 
-	"\n" . 'Contents of the Accept-Encoding: ' . $_SERVER['HTTP_ACCEPT_ENCODING'] . 
-	"\n" . 'Contents of the Connection: ' . $_SERVER['HTTP_CONNECTION'] . 
-	"\n" . 'Contents of the Host: ' . $_SERVER['HTTP_HOST'] . 
-	"\n" . 'The address of the page (if any) which referred the user agent to the current page: ' . $_SERVER['HTTP_REFERER'] . 
-	"\n" . 'Contents of the User-Agent. This is a string denoting the user agent being which is accessing the page.: ' . $_SERVER['HTTP_USER_AGENT'] . 
-	"\n" . 'Set to a non-empty value if the script was queried through the HTTPS protocol: ' . $_SERVER['HTTPS'] . 
-	"\n" . 'The IP address from which the user is viewing the current page: ' . $_SERVER['REMOTE_ADDR'] . 
-	"\n" . 'The Host name from which the user is viewing the current page: ' . $_SERVER['REMOTE_HOST'] . 
-	"\n" . 'The port being used on the users machine to communicate with the web server: ' . $_SERVER['REMOTE_PORT'] . 
-	"\n" . 'The authenticated user: ' . $_SERVER['REMOTE_USER'] . 
-	"\n" . 'The authenticated user if the request is internally redirected: ' . $_SERVER['REDIRECT_REMOTE_USER'] . 
-	"\n" . 'The absolute pathname of the currently executing script: ' . $_SERVER['SCRIPT_FILENAME'] . 
-	"\n" . 'The value given to the SERVER_ADMIN (for Apache) directive in the web server configuration file: ' . $_SERVER['SERVER_ADMIN'] . 
-	"\n" . 'The port on the server machine being used by the web server for communication: ' . $_SERVER['SERVER_PORT'] . 
-	"\n" . 'String containing the server version and virtual host name which are added to server-generated pages, if enabled: ' . $_SERVER['SERVER_SIGNATURE'] . 
-	"\n" . 'Filesystem- (not document root-) based path to the current script, after the server has done any virtual-to-real mapping: ' . $_SERVER['PATH_TRANSLATED'] . 
-	"\n" . 'Contains the current scripts path. This is useful for pages which need to point to themselves: ' . $_SERVER['SCRIPT_NAME'] . 
-	"\n" . 'The URI which was given in order to access this page: ' . $_SERVER['REQUEST_URI'] . 
-	"\n" . 'When doing Digest HTTP authentication this variable is set to the Authorization header sent by the client which you should then use to make the appropriate validation : ' . $_SERVER['PHP_AUTH_DIGEST'] . 
-	"\n" . 'When doing HTTP authentication this variable is set to the username provided by the user: ' . $_SERVER['PHP_AUTH_USER'] . 
-	"\n" . 'When doing HTTP authentication this variable is set to the password provided by the user: ' . $_SERVER['PHP_AUTH_PW'] . 
-	"\n" . 'When doing HTTP authenticated this variable is set to the authentication type: ' . $_SERVER['AUTH_TYPE'] . 
-	"\n" . 'Contains any client-provided pathname information trailing the actual script filename but preceding the query string, if available.: ' . $_SERVER['PATH_INFO'] . 
-	"\n" . 'Original version of PATH_INFO before processed by PHP: ' . $_SERVER['ORIG_PATH_INFO'] . 
-	"\n" . 'The filename of the currently executing script, relative to the document root: ' . $_SERVER['PHP_SELF'] . 
-	"\n" . 'Array of arguments passed to the script: ' . $_SERVER['argv'] . 
-	"\n" . 'Contains the number of command line parameters passed to the script (if run on the command line): ' . $_SERVER['argc']
-	, "metadata" => array(array("maxAge" => 1 , "maxCount" => 2 , "cacheControl" => 2, "haha" => 2,)),));
+$requestBody = array(array("eventId" => guid(), "eventType" => "Examensarbete", "data" =>
+'Request method: ' . $_SERVER['REQUEST_METHOD'] . 
+"\n" . 'Request time: ' . $_SERVER['REQUEST_TIME'] . 
+"\n" . 'Request time, type-float: ' . $_SERVER['REQUEST_TIME_FLOAT'] . 
+"\n" . 'What revision of the CGI specification the server is using: ' . $_SERVER['GATEWAY_INTERFACE'] . 
+"\n" . 'Server adress: ' . $_SERVER['SERVER_ADDR'] . 
+"\n" . 'Server name: ' . $_SERVER['SERVER_NAME'] . 
+"\n" . 'Server software: ' . $_SERVER['SERVER_SOFTWARE'] . 
+"\n" . 'Server protocol: ' . $_SERVER['SERVER_PROTOCOL'] . 
+"\n" . 'The query string, if any, via which the page was accessed: ' . $_SERVER['QUERY_STRING'] . 
+"\n" . 'The document root directory under which the current script is executing: ' . $_SERVER['DOCUMENT_ROOT'] . 
+"\n" . 'Contents of the Accept: ' . $_SERVER['HTTP_ACCEPT'] . 
+"\n" . 'Contents of the Accept Charset: ' . $_SERVER['HTTP_ACCEPT_CHARSET'] . 
+"\n" . 'Contents of the Accept-Language: ' . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . 
+"\n" . 'Contents of the Accept-Encoding: ' . $_SERVER['HTTP_ACCEPT_ENCODING'] . 
+"\n" . 'Contents of the Connection: ' . $_SERVER['HTTP_CONNECTION'] . 
+"\n" . 'Contents of the Host: ' . $_SERVER['HTTP_HOST'] . 
+"\n" . 'The address of the page (if any) which referred the user agent to the current page: ' . $_SERVER['HTTP_REFERER'] . 
+"\n" . 'Contents of the User-Agent. This is a string denoting the user agent being which is accessing the page.: ' . $_SERVER['HTTP_USER_AGENT'] . 
+"\n" . 'Set to a non-empty value if the script was queried through the HTTPS protocol: ' . $_SERVER['HTTPS'] . 
+"\n" . 'The IP address from which the user is viewing the current page: ' . $_SERVER['REMOTE_ADDR'] . 
+"\n" . 'The Host name from which the user is viewing the current page: ' . $_SERVER['REMOTE_HOST'] . 
+"\n" . 'The port being used on the users machine to communicate with the web server: ' . $_SERVER['REMOTE_PORT'] . 
+"\n" . 'The authenticated user: ' . $_SERVER['REMOTE_USER'] . 
+"\n" . 'The authenticated user if the request is internally redirected: ' . $_SERVER['REDIRECT_REMOTE_USER'] . 
+"\n" . 'The absolute pathname of the currently executing script: ' . $_SERVER['SCRIPT_FILENAME'] . 
+"\n" . 'The value given to the SERVER_ADMIN (for Apache) directive in the web server configuration file: ' . $_SERVER['SERVER_ADMIN'] . 
+"\n" . 'The port on the server machine being used by the web server for communication: ' . $_SERVER['SERVER_PORT'] . 
+"\n" . 'String containing the server version and virtual host name which are added to server-generated pages, if enabled: ' . $_SERVER['SERVER_SIGNATURE'] . 
+"\n" . 'Filesystem- (not document root-) based path to the current script, after the server has done any virtual-to-real mapping: ' . $_SERVER['PATH_TRANSLATED'] . 
+"\n" . 'Contains the current scripts path. This is useful for pages which need to point to themselves: ' . $_SERVER['SCRIPT_NAME'] . 
+"\n" . 'The URI which was given in order to access this page: ' . $_SERVER['REQUEST_URI'] . 
+"\n" . 'When doing Digest HTTP authentication this variable is set to the Authorization header sent by the client which you should then use to make the appropriate validation : ' . $_SERVER['PHP_AUTH_DIGEST'] . 
+"\n" . 'When doing HTTP authentication this variable is set to the username provided by the user: ' . $_SERVER['PHP_AUTH_USER'] . 
+"\n" . 'When doing HTTP authentication this variable is set to the password provided by the user: ' . $_SERVER['PHP_AUTH_PW'] . 
+"\n" . 'When doing HTTP authenticated this variable is set to the authentication type: ' . $_SERVER['AUTH_TYPE'] . 
+"\n" . 'Contains any client-provided pathname information trailing the actual script filename but preceding the query string, if available.: ' . $_SERVER['PATH_INFO'] . 
+"\n" . 'Original version of PATH_INFO before processed by PHP: ' . $_SERVER['ORIG_PATH_INFO'] . 
+"\n" . 'The filename of the currently executing script, relative to the document root: ' . $_SERVER['PHP_SELF'] . 
+"\n" . 'Array of arguments passed to the script: ' . $_SERVER['argv'] . 
+"\n" . 'Contains the number of command line parameters passed to the script (if run on the command line): ' . $_SERVER['argc']
+, "metadata" => array(array("maxAge" => 1 , "maxCount" => 2 , "cacheControl" => 2, "haha" => 2,)),));
 
-	$response = SimpleHttpClient::post('http://127.0.0.1:2113/streams/' . $_SERVER['REMOTE_ADDR'])
-		->setJsonRequestBody($requestBody)
-		->execute();
+$response = SimpleHttpClient::post('http://127.0.0.1:2113/streams/' . $_SERVER['REMOTE_ADDR'])
+	->setJsonRequestBody($requestBody)
+	->execute();
 
 class SimpleHttpClient {
 
@@ -605,18 +597,10 @@ return $retVal;
 }
 
 ?>
-
       </section>
-
       <footer>
         test
-
                 </footer>
-      
-
     </div>
-
-
   </body>
-
 </html>
