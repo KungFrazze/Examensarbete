@@ -16,3 +16,6 @@ Bilderna måste placers i en mapp som heter images.
 
 Hemsidan körs sedan via programmet Xampp. Versionen ska vara Control Panel 3.2.1.
 Genom att placera alla filerna i mappen xampp\htdocs\myfiles och att starta en Apache server genom Xampp så kan hemsidan visas sen i webbläsaren.
+
+Undervisningsmaterialet för examensarbetet kan hittas på denna länken:
+https://www.dropbox.com/s/mj1cgy2eilz765l/Event%20Store.ppt?dl=0
